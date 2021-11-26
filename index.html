@@ -14,37 +14,138 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>Louer une voiture</li>
-                <li>Louer un utilitaire</li>
-                <li>Réserver un chauffeur</li>
-                <li>Découvrez nos agences</li>
-                <li>Découvrez nos agences</li>
-                <li>Mon compte</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
 
-        <div id="carousel">
-            <img src="img/background.jpg" alt="Voiture bleue stationnée devant un bel immeuble.">
+        <!-- MENU -->
+        <div id="menu">
+            <i class="fas fa-bars"></i>
+            <nav>
+                <ul>
+                    <li>Louer une voiture</li>
+                    <li>Louer un utilitaire</li>
+                    <li>Réserver un chauffeur</li>
+                    <li>Découvrez nos agences</li>
+                    <li>Découvrez nos agences</li>
+                    <li>Mon compte</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </div>
 
+        <!-- CAROUSEL -->
+        <div id="carousel">
+            <img src="img/background.jpg" alt="Voiture bleue stationnée devant un bel immeuble." id="backgroundImage">
+        </div>
+
+        <div id="homepageWelcome">
+            <h1>Bienvenue à bord</h1>
+            <p>Location de voiture 24/24 et 7j/7</p>
+        </div>
+
+        <!-- SEARCH BAR -->
         <div id="searchBar">
             <div class="searchItem">
                 <p>Adresse de départ</p>
                 <i class="fas fa-caret-down"></i>
             </div>
-            <p>Début de location</p>
+            <div class="searchItem">
+                <p>Début de location</p>
+                <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="searchItem">
+                <p>Fin de location</p>
+                <i class="far fa-calendar-alt"></i>
+            </div>
+            <a href="#" id="searchBtn">Valider ma recherche</a>
         </div>
 
     </header>
 
     <main>
-        <section></section>
+        <section id="mainSection">
+            <p id="totalResult"><strong>7</strong> résultats</p>
+            <div id="filterButtonDiv">
+                <a id="filterButton">Prix croissant <i class="fas fa-caret-down"></i></a>
+            </div>
+            <!-- CAR CARDS -->
+            <article class="carCard">
+                <div class="carImage">
+                    <i class="fas fa-caret-left"></i>
+                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="carDescription">
+                    <h2>Peugeot 208</h2>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <a href="#" class="carPriceButton">Réserver et Payer</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="carCard">
+                <div class="carImage">
+                    <i class="fas fa-caret-left"></i>
+                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="carDescription">
+                    <h2>Ford Focus</h2>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                    <p>999 €</p>
+                    <a href="#" class="carPriceButton">Réserver et Payer</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="carCard">
+                <div class="carImage">
+                    <i class="fas fa-caret-left"></i>
+                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="carDescription">
+                    <h2>Audi A1</h2>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                    <p>1100 € - Agence de Paris</p>
+                    <a href="#" class="carPriceButton">Réserver et Payer</a>
+                </div>
+            </article>
+
+            <hr>
+
+            <article class="carCard">
+                <div class="carImage">
+                    <i class="fas fa-caret-left"></i>
+                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="carDescription">
+                    <h2>Opel Mokka</h2>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                    <p>1150 € - Agence de Paris</p>
+                    <a href="#" class="carPriceButton">Réserver et Payer</a>
+                </div>
+            </article>
+
+            <hr>
+
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div id="agencyImgDiv">
+            <img src="img/agence.jpg" alt="Photo de la rue où se trouve l'agence à Paris." id="agencyPicture">
+        </div>
+        <div id="agencyAddrDiv">
+            <p>Notre Agence de <strong>Paris</strong></p>
+            <p>300 boulevard de Vaugirard, 75015, Paris</p>
+            <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+            <p>01 49 78 21 33</p>
+            <p>contact@vtc.com</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
