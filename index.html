@@ -13,7 +13,10 @@
 
 <body>
 
+    <!-- HEADER SECTION -->
     <header>
+
+        <!-- <img src="img/background.jpg" alt="Voiture bleue stationnée devant un bel immeuble." id="backgroundImage"> -->
 
         <!-- MENU -->
         <div id="menu">
@@ -31,10 +34,6 @@
             </nav>
         </div>
 
-        <!-- CAROUSEL -->
-        <div id="carousel">
-            <img src="img/background.jpg" alt="Voiture bleue stationnée devant un bel immeuble." id="backgroundImage">
-        </div>
 
         <div id="homepageWelcome">
             <h1>Bienvenue à bord</h1>
@@ -43,29 +42,36 @@
 
         <!-- SEARCH BAR -->
         <div id="searchBar">
+            <!-- <div id="searchAllItems"> -->
             <div class="searchItem">
                 <p>Adresse de départ</p>
                 <i class="fas fa-caret-down"></i>
             </div>
             <div class="searchItem">
                 <p>Début de location</p>
-                <i class="far fa-calendar-alt"></i>
+                <div class="calendarPicto">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
             </div>
             <div class="searchItem">
                 <p>Fin de location</p>
                 <i class="far fa-calendar-alt"></i>
             </div>
+            <!-- </div> -->
             <a href="#" id="searchBtn">Valider ma recherche</a>
         </div>
 
+
     </header>
 
+    <!-- MAIN SECTION -->
     <main>
         <section id="mainSection">
             <p id="totalResult"><strong>7</strong> résultats</p>
             <div id="filterButtonDiv">
                 <a id="filterButton">Prix croissant <i class="fas fa-caret-down"></i></a>
             </div>
+
             <!-- CAR CARDS -->
             <article class="carCard">
                 <div class="carImage">
@@ -86,7 +92,7 @@
             <article class="carCard">
                 <div class="carImage">
                     <i class="fas fa-caret-left"></i>
-                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <img src="img/vehicule2.png" alt="Photo de la voiture" class="carSmallImage">
                     <i class="fas fa-caret-right"></i>
                 </div>
                 <div class="carDescription">
@@ -102,7 +108,7 @@
             <article class="carCard">
                 <div class="carImage">
                     <i class="fas fa-caret-left"></i>
-                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <img src="img/vehicule3.png" alt="Photo de la voiture" class="carSmallImage">
                     <i class="fas fa-caret-right"></i>
                 </div>
                 <div class="carDescription">
@@ -118,7 +124,7 @@
             <article class="carCard">
                 <div class="carImage">
                     <i class="fas fa-caret-left"></i>
-                    <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                    <img src="img/vehicule4.png" alt="Photo de la voiture" class="carSmallImage">
                     <i class="fas fa-caret-right"></i>
                 </div>
                 <div class="carDescription">
@@ -131,9 +137,77 @@
 
             <hr>
 
+            <!-- HIDDEN ARTICLES -->
+            <aside>
+                <article class="carCard">
+                    <div class="carImage">
+                        <i class="fas fa-caret-left"></i>
+                        <img src="img/vehicule1.png" alt="Photo de la voiture" class="carSmallImage">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="carDescription">
+                        <h2>Opel Mokka</h2>
+                        <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                        <p>1150 € - Agence de Paris</p>
+                        <a href="#" class="carPriceButton">Réserver et Payer</a>
+                    </div>
+                </article>
+
+                <hr>
+
+                <article class="carCard">
+                    <div class="carImage">
+                        <i class="fas fa-caret-left"></i>
+                        <img src="img/vehicule2.png" alt="Photo de la voiture" class="carSmallImage">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="carDescription">
+                        <h2>Opel Mokka</h2>
+                        <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                        <p>1150 € - Agence de Paris</p>
+                        <a href="#" class="carPriceButton">Réserver et Payer</a>
+                    </div>
+                </article>
+
+                <hr>
+
+                <article class="carCard">
+                    <div class="carImage">
+                        <i class="fas fa-caret-left"></i>
+                        <img src="img/vehicule3.png" alt="Photo de la voiture" class="carSmallImage">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="carDescription">
+                        <h2>Opel Mokka</h2>
+                        <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                        <p>1150 € - Agence de Paris</p>
+                        <a href="#" class="carPriceButton">Réserver et Payer</a>
+                    </div>
+                </article>
+
+                <hr>
+
+                <article class="carCard">
+                    <div class="carImage">
+                        <i class="fas fa-caret-left"></i>
+                        <img src="img/vehicule4.png" alt="Photo de la voiture" class="carSmallImage">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="carDescription">
+                        <h2>Opel Mokka</h2>
+                        <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1 000 km (0,5/km supplémentaire).</p>
+                        <p>1150 € - Agence de Paris</p>
+                        <a href="#" class="carPriceButton">Réserver et Payer</a>
+                    </div>
+                </article>
+
+                <hr>
+            </aside>
+
         </section>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer>
         <div id="agencyImgDiv">
             <img src="img/agence.jpg" alt="Photo de la rue où se trouve l'agence à Paris." id="agencyPicture">

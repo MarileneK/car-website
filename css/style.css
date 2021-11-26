@@ -9,8 +9,9 @@
 
 :root {
     --color_lightgrey: #dcdde1;
-    --color_lightgreyOpacity: rgba(238, 238, 238, 1);
+    --color_lightgreyOpacity: rgba(238, 238, 238, 0.5);
     --color_green: #509a51;
+    --color_greenOpacity: rgba(102, 204, 153, 0.7);
 }
 
 body {
@@ -35,64 +36,75 @@ a:hover {
 /* ------------------------------------------------- */
 /* HEADER SECTION */
 header {
-    height: 80%;
+    /* height: 80%; */
+    background-image: url("../img/background.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
     /* position: relative; */
     /* text-align: center; */
 }
 
-#backgroundImage {
-    /* width: 100%; */
+
+/* #backgroundImage {
     /* height: 600px; */
     /* overflow: hidden; */
     /* min-width: 400px; */
-    width: 100%;
+    /* width: 300%;
     height: auto;
-    /* display: block; */
-}
+} */ 
 
 #homepageWelcome {
     color: white; 
-    /* position: relative; */
-    /* overflow: visible; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
-    top: -400px;
-    z-index: 1;
+    /* top: -400px;
+    z-index: 1; */
     width: 100%;
     margin: 0 auto;
-    min-height: 200px;
+    min-height: 500px;
 }
 
 h1 {
     margin-bottom: 2px;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
-    top: 100px;
-    z-index: 3;
+    /* top: 100px; */
+    /* z-index: 3; */
     color: white;
+    margin-top: 100px;
+}
+
+#homepageWelcome p {
+    font-size: 17px;
 }
 
 /* MENU */
 #menu {
     display: flex;
     justify-content: end;
-    position: relative;
-    z-index: 4;
+    align-items: flex-end;
 }
 
 .fa-bars {
     color: var(--color_lightgrey);
-    border: 1px solid white;
+    border: 1px solid var(--color_lightgreyOpacity);
     padding: 5px 10px;
     border-radius: 10%;
+    margin: 5px;
 }
 
 ul {
     list-style-type: none;
+    background-color: white;
+}
+
+nav {
+    display: none;
 }
 
 /* SEARCH BAR */
@@ -102,14 +114,16 @@ ul {
     text-align: center;
     width: 95%;
     margin: 0 auto;
+    /* padding-top: 5px; */
     position: relative;
-    bottom: 600px;
+    bottom: 20px;
 }
 
 .searchItem {
     display: flex;
     justify-content: space-between;
-    padding: 5px 13px;
+    align-items: center;
+    padding: 10px 13px;
     margin: 10px 5px;
     border-radius: 2px;
     background-color: white;
@@ -125,7 +139,7 @@ searchItem i {
 
 #searchBar a {
     color: white;
-    background-color: var(--color_green);
+    background-color: var(--color_greenOpacity);
     display: block;
     padding: 15px;
 }
@@ -136,7 +150,7 @@ searchItem i {
 
 #mainSection {
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 #totalResult {
@@ -195,6 +209,10 @@ searchItem i {
     color: white;
 }
 
+aside {
+    display: none;
+}
+
 /* ------------------------------------------------- */
 /* FOOTER SECTION */
 
@@ -204,7 +222,7 @@ footer {
     align-items: center;
     margin: 50px 0;
     font-size: 12px;
-    line-spacing 1px: 
+    letter-spacing: 1px;
 }
 
 #agencyPicture {
@@ -216,15 +234,41 @@ footer {
 
 /* ------------------------------------------------- */
 /* MEDIA QUERIES */
+/* TABLETTE */
+
+/* SEARCH BAR */
+@media (min-width: 768px) {
+    #searchBar {
+        bottom: 200px;
+    }
+}
+
+/* -------- */
+/* LARGE SCREENS */
 @media (min-width: 992px) {
 
     /* HEADER SECTION */   
     header {
-        
+        height: 500px;
+        background-size: cover;
     }
-    #backgroundImage {
-        width: 100%;
+
+    /* SEARCH BAR */
+    #searchBar {
+        display: flex;
+        justify-content: space-evenly;
+        bottom: 150px;
+        width: 70%;
     }
+
+    .searchItem {
+        width: 250px;
+    }
+
+    #searchBar a {
+        width: 300px;
+    }
+    
     /* ------------------------------------------------- */
     /* MAIN SECTION */
     /* CAR CARDS */
@@ -263,6 +307,3 @@ footer {
         display: inline;
     }
 }
-/* Ajuster la taille de la photo 
-ajuster la taille de al section background 
-*/
